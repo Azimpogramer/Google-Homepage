@@ -1,0 +1,142 @@
+body{
+       background-color: #353535;
+       color: white;
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: Arial, Helvetica, sans-serif;
+}
+section{
+       position: relative;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh;
+}
+section header{
+       position: absolute;
+       top: 0;
+       width: 100%;
+       display: flex;
+       justify-content: flex-end;
+       padding: 20px;
+}
+section header ul{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+section header ul li{
+       list-style: none;
+       margin-left: 20px;
+
+}
+section header ul li a{
+       color: white;
+       text-decoration: none;
+       font-size: 13px;
+}
+section header ul li button{
+       background-color: #686de0;
+       border: none;
+       outline: none;
+       padding: 8px 14px;
+       color: white;
+       font-size: 14px;
+       font-weight: bold;
+       border-radius: 3px;
+       cursor: pointer;
+}
+section .main{
+       width: 500px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+}
+section .main .serchbox{
+       position: relative;
+       width: 100%;
+       margin-top: 20px;
+}
+section .main .serchbox .serch{
+       width: 100%;
+       padding: 10px;
+       padding-left: 45px;
+       padding-right: 0px;
+       border-radius: 30px;
+       border: 1px solid white;
+       outline: none;
+       font-size: 16px;
+}
+section .main .serchbox .icon{
+       position: absolute;
+       top: 0;
+       width: 100%;
+       display: flex;
+       padding: 12px 20px;
+       justify-content: space-between;
+       align-items: center;
+       pointer-events: none;
+}
+section .main .buttons{
+      margin-top: 20px; 
+}
+section .main .buttons button{
+       margin: 0px 5px;
+       margin-left: 80px;
+       padding: 2px 20px ;
+       color: white;
+       font-size: 14px;
+       border: none;
+       cursor: pointer;
+       border-radius: 1px solid transparent;
+       outline: none;
+       background-color: #353839;
+}
+section .main .buttons button:hover{
+       border: 1px solid beige;
+}
+section .main .lang {
+       margin-top: 20px;
+}
+section .main .lang a{
+       color: white;
+}
+section .footer{
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+}
+section .footer .row{
+       display: flex;
+       justify-content: space-between;
+       border-top: 1px solid #353839;
+}
+section .footer .row ul{
+       display: flex;
+}
+section .footer .row ul li{
+       list-style: none;
+}
+section .footer .row ul li a{
+       text-decoration: none;
+       font-size: 15px;
+       color: white;
+       margin: 25px;
+}
+
+/*Mobile View*/
+@media (max-width: 672px){
+       section .main .serchbox .serch{
+              width: 561px;
+       }
+       section .main .serchbox .icon{
+              width: 79%;
+       }
+       section .footer .row ul{
+              display: block;
+       }
+}
